@@ -94,7 +94,7 @@ class App extends Component {
         <div className="App">
          <div className="container">
            < Header />
-           <Route exact path="/" render={ props => (
+           <Route path="/" render={ props => (
              <React.Fragment>
                < AddTodos addTodo={this.addTodo}/>
                <Todos todos={this.state.todos} markComplete={this.markComplete} delTodo={this.delTodo}/>  {/* pass in object & function to todo component */}
